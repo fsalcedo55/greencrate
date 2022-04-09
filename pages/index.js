@@ -1,8 +1,10 @@
 import Head from "next/head";
-import Navbar from "../pages/navbar";
-import Hero from "../pages/hero";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+import FoodBank from "../components/FoodBank";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import DiscountTiers from "../components/DiscountTiers";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <Hero />
+        <FoodBank />
+        <DiscountTiers />
       </main>
 
       <footer className={styles.footer}>

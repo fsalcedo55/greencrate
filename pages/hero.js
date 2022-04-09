@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import Form from "../pages/form";
+import Form from "./Form";
 
-export default function hero() {
+export default function Hero() {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex px-5 py-2 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <Image
             className="object-cover object-center rounded"

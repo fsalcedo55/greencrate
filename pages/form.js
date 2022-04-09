@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function form() {
-  const [formData, setFormData] = React.useState({
+export default function Form() {
+  const [formData, setFormData] = useState({
     walletAddress: "",
     income: "",
   });
