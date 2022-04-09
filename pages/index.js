@@ -6,6 +6,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import DiscountTiers from "../components/DiscountTiers";
 import DonorBenefits from "../components/DonorBenefits";
+import Apply from "./Apply";
 
 export default function Home() {
   return (
