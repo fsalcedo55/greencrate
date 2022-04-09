@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Form from "../pages/form";
 
 export default function hero() {
   return (
@@ -26,14 +27,15 @@ export default function hero() {
             mlkshk tote bag selvage hot chicken authentic tumeric truffaut
             hexagon try-hard chambray.
           </p>
-          <div className="flex justify-center">
+          <Form />
+          {/* <div className="flex justify-center">
             <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               Button
             </button>
             <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
               Button
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
