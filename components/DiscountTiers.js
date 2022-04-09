@@ -2,8 +2,8 @@ import React from "react";
 
 export default function DiscountTiers() {
   return (
-    <div className="pt-12 w-full mt-20">
-      <h1 className="flex justify-center text-4xl font-bold">
+    <div className="py-20 w-full">
+      <h1 className="flex justify-center text-4xl text-white font-bold">
         Healthy Foods Get More Discounts
       </h1>
       <div className="container px-6 py-16 mx-auto">
@@ -15,7 +15,7 @@ export default function DiscountTiers() {
               </h2>
             </div>
             <div className="flex-shrink-0">
-              <span className="pt-2 text-3xl font-bold text-gray-800">
+              <span className="pt-2 text-6xl font-bold text-gray-800">
                 10% Off
               </span>
             </div>
@@ -33,7 +33,7 @@ export default function DiscountTiers() {
               </h2>
             </div>
             <div className="flex-shrink-0">
-              <span className="pt-2 text-3xl font-bold text-gray-800">
+              <span className="pt-2 text-6xl font-bold text-gray-800">
                 30% Off
               </span>
             </div>
@@ -51,7 +51,7 @@ export default function DiscountTiers() {
               </h2>
             </div>
             <div className="flex-shrink-0">
-              <span className="pt-2 text-3xl font-bold text-gray-800">
+              <span className="pt-2 text-6xl font-bold text-gray-800">
                 50% Off
               </span>
             </div>

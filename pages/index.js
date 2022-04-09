@@ -31,10 +31,10 @@ export default function Home() {
             />
           </a>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 text-white hover:text-gray-900">Fourth Link</a>
+            <a className="mr-5 text-white hover:text-gray-900"></a>
           </nav>
-          <button className="inline-flex items-center bg-[#DD6C03] text-white border-0 py-3 px-6 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-            Button
+          <a href="/walletconnect" className="inline-flex items-center bg-[#DD6C03] text-white border-0 py-3 px-6 focus:outline-none hover:bg-orange-200 rounded text-base mt-4 md:mt-0">
+            Dapp
             <svg
               fill="none"
               stroke="currentColor"
@@ -46,7 +46,7 @@ export default function Home() {
             >
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
-          </button>
+          </a>
         </div>
       </header>
 
@@ -55,12 +55,12 @@ export default function Home() {
           <div className="text-7xl font-black text-white">
             Helping Hungry Families
           </div>
-          <div className="text-white mt-4">
+          <div className="text-white mt-4 text-2xl">
           Together we can pool funds to help subsidize groceries for families in difficult moments
           </div>
         </div>
         <div className="w-5/12">
-          <img src="/broc.png"  className="w-60 mx-auto"/>
+          <img src="/broc.png"  className="w-80 mx-auto"/>
         </div>
       </section>
       <section className="bg-[#C3B37C] p-12">
@@ -71,9 +71,10 @@ export default function Home() {
               <div class="text-5xl font-bold mt-6">
                 Inflation Woes
               </div>
-              <div>
+              <div className="mt-6 text-xl">
                 <p>Inflation has increased to incredible heights. Poverty is on the rise and every person that falls behind brings down communities all across the US. </p>
-                <p>You can directly help repair the damage and show your support with incredible artwork by guest artist yetiscream. </p>
+                <p className="mt-6">You can directly help repair the damage and show your support with incredible artwork by guest artist yetiscream. </p>
+                <p className="mt-6">You can directly help repair the damage and gain major benefits every month. With quarterly opportunities to win rare NFTs with art from incredible local artists.</p>
               </div>
             </div>
           </div>
@@ -82,7 +83,12 @@ export default function Home() {
      
           </div>
         </div>
-
+      </section>
+      <section className="p-12 bg-white">
+        <img src="/sec3.png"/>
+      </section>
+      <section className="bg-gradient-to-r from-[#A1CCB2] to-[#3F845B]">
+        <DiscountTiers />
       </section>
 
 
@@ -91,11 +97,13 @@ export default function Home() {
 
   
 
-      <main className={styles.main}>
+      <main className="bg-white">
         <Hero />
-        <FoodBank />
-        <DiscountTiers />
       </main>
+      <section class="p-12 ">
+      <FoodBank />
+
+      </section>
 
       <footer className={styles.footer}>
         <Image src="/logo.svg" alt="Vercel Logo" width={200} height={72} />
