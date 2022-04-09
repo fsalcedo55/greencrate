@@ -5,6 +5,7 @@ import FoodBank from "../components/FoodBank";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import DiscountTiers from "../components/DiscountTiers";
+import DonorBenefits from "../components/DonorBenefits";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <FoodBank />
         <DiscountTiers />
+        <DonorBenefits />
       </main>
 
       <footer className={styles.footer}>
