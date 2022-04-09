@@ -2,7 +2,7 @@ import React from "react";
 
 export default function DiscountTiers() {
   return (
-    <div className="bg-white py-16">
+    <div className="pt-12 w-full mt-20">
       <h1 className="flex justify-center text-4xl font-bold">
         Healthy Foods Get More Discounts
       </h1>

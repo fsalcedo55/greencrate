@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Navbar from "../pages/navbar";
-import Hero from "../pages/hero";
+import Navbar from "../pages/Navbar";
+import Hero from "../pages/Hero";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
@@ -56,9 +56,7 @@ export default function Home() {
       </Head>
       <Navbar />
 
-      <main className={styles.main}>
-        YOOO
-      </main>
+      <main className={styles.main}>YOOO</main>
 
       <footer className={styles.footer}>
         <div>GreenCrate</div>
