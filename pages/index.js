@@ -5,6 +5,7 @@ import FoodBank from "../components/FoodBank";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import DiscountTiers from "../components/DiscountTiers";
+import Apply from "./Apply";
 
 export default function Home() {
   return (
