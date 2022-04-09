@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -17,16 +18,11 @@ export default function Form() {
     });
   }
 
+  function handleApply() {}
+
   return (
     <div>
-      {/* <form>
-        <input
-          type="text"
-          placeholder="Ethereum Wallet Address"
-          onChange={handleChange}
-        />
-      </form> */}
-      <form className="flex lg:w-2/3 w-full sm:flex-row flex-col flex-start px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
+      <form className="flex lg:w-full w-full sm:flex-row flex-col flex-start px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
         <div className="relative flex-grow w-full">
           <label
             type="wallet-address"
@@ -57,9 +53,14 @@ export default function Form() {
             placeholder="$"
           />
         </div>
-        <button className="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-          Apply
-        </button>
+        <Link href="/walletconnect">
+          <button
+            className="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            onSubmit={handleApply}
+          >
+            Apply
+          </button>
+        </Link>
       </form>
     </div>
   );

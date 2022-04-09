@@ -23,8 +23,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <div>GreenCrate</div>
-        <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+        <Image src="/logo.svg" alt="Vercel Logo" width={200} height={72} />
       </footer>
     </div>
   );
