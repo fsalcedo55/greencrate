@@ -8,13 +8,20 @@ import DiscountTiers from "../components/DiscountTiers";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="bg-[#102418]">
       <Head>
         <title>GreenCrate</title>
         <meta name="description" content="Decentralized food crisis app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div>
       <Navbar />
+      </div>
+
+
+      <section>
+        
+      </section>
 
       <main className={styles.main}>
         <Hero />

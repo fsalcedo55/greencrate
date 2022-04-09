@@ -9,7 +9,7 @@ export default function Navbar() {
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <Image
             src="/logo.svg"
-            className="w-48"
+            className="w-60"
             alt="greencratelogo"
             height={50}
             width={150}
