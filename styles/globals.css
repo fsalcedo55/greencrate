@@ -4,3 +4,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+
+body, html{
+  font-family: 'MuseoModerno', cursive;
+}
