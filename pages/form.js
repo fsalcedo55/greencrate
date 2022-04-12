@@ -55,7 +55,7 @@ export default function Form() {
         </div>
         <Link href="/walletconnect">
           <button
-            className="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            className="text-white border-0 py-2 px-8 focus:outline-none bg-[#DD6C03] rounded text-lg"
             onSubmit={handleApply}
           >
             Apply
