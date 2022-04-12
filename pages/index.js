@@ -5,8 +5,8 @@ import FoodBank from "../components/FoodBank";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import DiscountTiers from "../components/DiscountTiers";
-import DonorBenefits from "../components/DonorBenefits";
-import Apply from "./Apply";
+// import DonorBenefits from "../components/DonorBenefits";
+// import Apply from "./Apply";
 
 export default function Home() {
   return (
@@ -74,7 +74,7 @@ export default function Home() {
       <section className="bg-[#C3B37C] p-12">
         <div className="max-w-5xl mx-auto flex h-full">
           <div className="w-1/2">
-            <div class="bg-white rounded-xl h-full p-12">
+            <div className="bg-white rounded-xl h-full p-12">
               <img src="/frust.png" className="w-24" />
               <div class="text-5xl font-bold mt-6">Inflation Woes</div>
               <div className="mt-6 text-xl">
