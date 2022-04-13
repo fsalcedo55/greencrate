@@ -3,8 +3,13 @@ import Head from "next/head";
 import Hero from "./Hero";
 import FoodBank from "../components/FoodBank";
 import Image from "next/image";
+import brocPic from "../public/broc.png";
+import frustPic from "../public/frust.png";
+import percentPic from "../public/percent.png";
+import sec3Pic from "../public/sec3.png";
 import styles from "../styles/Home.module.css";
 import DiscountTiers from "../components/DiscountTiers";
+import Link from "next/link";
 // import DonorBenefits from "../components/DonorBenefits";
 // import Apply from "./Apply";
 
@@ -37,23 +42,22 @@ export default function Home() {
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <a className="mr-5 text-white hover:text-gray-900"></a>
           </nav>
-          <a
-            href="/walletconnect"
-            className="inline-flex items-center bg-[#DD6C03] text-white border-0 py-3 px-6 focus:outline-none hover:bg-orange-200 rounded text-base mt-4 md:mt-0"
-          >
-            Dapp
-            <svg
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-4 h-4 ml-1"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
+          <Link href="/walletconnect">
+            <a className="inline-flex items-center bg-[#DD6C03] text-white border-0 py-3 px-6 focus:outline-none hover:bg-orange-200 rounded text-base mt-4 md:mt-0">
+              Dapp
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                className="w-4 h-4 ml-1"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </Link>
         </div>
       </header>
 
@@ -68,15 +72,15 @@ export default function Home() {
           </div>
         </div>
         <div className="w-5/12">
-          <img src="/broc.png" className="w-80 mx-auto" />
+          <Image src={brocPic} className="w-80 mx-auto" alt="brocoli" />
         </div>
       </section>
       <section className="bg-[#C3B37C] p-12">
         <div className="max-w-5xl mx-auto flex h-full">
           <div className="w-1/2">
             <div className="bg-white rounded-xl h-full p-12">
-              <img src="/frust.png" className="w-24" />
-              <div class="text-5xl font-bold mt-6">Inflation Woes</div>
+              <Image src={frustPic} className="w-24" alt="frust-pic" />
+              <div className="text-5xl font-bold mt-6">Inflation Woes</div>
               <div className="mt-6 text-xl">
                 <p>
                   Inflation has increased to incredible heights. Poverty is on
@@ -96,12 +100,12 @@ export default function Home() {
             </div>
           </div>
           <div className="w-1/2 p-6">
-            <img src="/percent.png" />
+            <Image src={percentPic} alt="percent-pic" />
           </div>
         </div>
       </section>
       <section className="p-12 bg-white">
-        <img src="/sec3.png" />
+        <Image src={sec3Pic} alt="sec3-pic" />
       </section>
       <section className="bg-gradient-to-r from-[#A1CCB2] to-[#3F845B]">
         <DiscountTiers />

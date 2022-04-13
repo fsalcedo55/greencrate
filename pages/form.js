@@ -53,7 +53,7 @@ export default function Form() {
             placeholder="$"
           />
         </div>
-        <Link href="/walletconnect">
+        <Link href="/walletconnect" passHref>
           <button
             className="text-white border-0 py-2 px-8 focus:outline-none bg-[#DD6C03] rounded text-lg"
             onSubmit={handleApply}
