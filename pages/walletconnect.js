@@ -2,6 +2,7 @@ import Head from "next/head";
 import Hero from "../pages/Hero";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 import WalletConnect from "@walletconnect/client";
 import QRCodeModal from "@walletconnect/qrcode-modal";
@@ -45,18 +46,21 @@ connector.on("disconnect", (error, payload) => {
   // Delete connector
 });
 
-console.log(connector.accounts)
+console.log(connector.accounts);
 
 export default function Home() {
   return (
     <div className="bg-[#102418]">
-            <Head>
+      <Head>
         <title>GreenCrate</title>
         <meta name="description" content="Decentralized food crisis app" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet" />
+        {/* <link
+          href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap"
+          rel="stylesheet"
+        /> */}
       </Head>
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -72,32 +76,37 @@ export default function Home() {
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <a className="mr-5 text-white hover:text-gray-900"></a>
           </nav>
-          <a href="/walletconnect" className="inline-flex items-center bg-[#DD6C03] text-white border-0 py-3 px-6 focus:outline-none hover:bg-orange-200 rounded text-base mt-4 md:mt-0">
-            Dapp
-            <svg
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-4 h-4 ml-1"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
+          <Link href="/walletconnect">
+            <a className="inline-flex items-center bg-[#DD6C03] text-white border-0 py-3 px-6 focus:outline-none hover:bg-orange-200 rounded text-base mt-4 md:mt-0">
+              Dapp
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                className="w-4 h-4 ml-1"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </Link>
         </div>
       </header>
       <main className="max-w-lg mx-auto h-screen pt-12">
-        
-        
         <div className="bg-white rounded-xl p-12">
           <div className="text-center">
-            <img src="/check.png" className="mx-auto" />
-          <div className="font-bold text-2xl">wallet address</div>
-          <div> {connector.accounts[0]} </div>
+            <Image
+              src="/check.png"
+              className="mx-auto"
+              width={100}
+              height={100}
+              alt="check-logo"
+            />
+            <div className="font-bold text-2xl">wallet address</div>
+            <div> {connector.accounts[0]} </div>
           </div>
-        
         </div>
       </main>
 
